@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, system-ui, sans-serif;
+  background: #0e0e10;
+  color: #f2f2f2;
+}
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+  min-height: 100vh;
+}
+h1 { font-size: 1.4rem; margin-bottom: 4px; }
+p.sub { color: #9a9aa2; margin-top: 0; margin-bottom: 24px; }
+.q { margin-bottom: 28px; }
+.q label.qtitle { display: block; font-weight: 600; margin-bottom: 10px; }
+.opts { display: flex; flex-direction: column; gap: 8px; }
+.opt {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2e;
+  background: #17171a;
+  cursor: pointer;
+}
+.opt.selected { border-color: #5b8cff; background: #17203a; }
+input[type="text"], input[type="number"], input[type="date"], input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2e;
+  background: #17171a;
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+button.primary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #5b8cff;
+  color: #0e0e10;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button.primary:disabled { opacity: 0.5; }
+.progress { height: 4px; background: #222; border-radius: 2px; margin-bottom: 24px; }
+.progress-fill { height: 100%; background: #5b8cff; border-radius: 2px; transition: width .2s; }
+.error { color: #ff6b6b; margin-top: 8px; }
